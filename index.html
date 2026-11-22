@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Fee Statement | KIET LMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- <div class="browser-strip">
+    <div class="apps-icon">▦</div><span class="browser-separator"></span>
+    <span class="bookmark"><b class="yt">▶</b> YouTube</span>
+    <span class="bookmark"><b class="chatgpt">◎</b> ChatGPT</span>
+    <span class="bookmark"><b class="deep">◈</b> DeepSeek - Into the...</span>
+    <span class="bookmark"><b class="gmail">M</b> Inbox (858) - muzan...</span>
+    <span class="bookmark"><b class="fb">f</b> (6) Facebook</span>
+    <span class="bookmark"><b class="insta">◎</b> Instagram</span>
+    <span class="bookmark"><b class="linkedin">in</b> (21) Feed | LinkedIn</span>
+    <span class="bookmark"><b class="indeed">i</b> Job Search | Indeed</span>
+    <span class="browser-spacer"></span><span class="double-chevron">»</span><span class="browser-separator"></span><span>▱</span><span>All Bookmarks</span>
+  </div> -->
+
+  <aside class="sidebar" id="sidebar">
+    <button class="hamburger" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+    <!-- <nav>
+      <a href="#" aria-label="Dashboard">◉</a>
+      <a href="#" aria-label="Home">⌂</a>
+      <a href="#" aria-label="Calendar">▦</a>
+      <a href="#" aria-label="Academics">◇</a>
+      <a href="#" aria-label="Documents">▱</a>
+    </nav> -->
+  </aside>
+
+  <header class="topbar">
+    <div class="brand">
+      <!-- <div class="logo-mark"><span class="logo-star">★</span><span class="logo-swoosh"></span><b>KIET</b><small>KIET</small></div> -->
+      <div class="brand-copy"><strong>KIET</strong><span>LEARNING MANAGEMENT SYSTEM</span></div>
+    </div>
+    <div class="top-actions">
+      <button aria-label="Search">⌕</button>
+      <button class="notification" aria-label="Notifications">♧<i>27</i></button>
+      <button aria-label="Messages">▢</button>
+      <button class="avatar" aria-label="Profile">●</button>
+      <span class="tiny-caret">⌄</span>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="statement-shell">
+      <div class="toolbar">
+        <button class="outline-btn" id="backBtn">← Back to Student Portal</button>
+        <button class="outline-btn" id="expandAll">Expand / Collapse</button>
+      </div>
+
+      <div class="content">
+        <section class="student-banner">
+          <div class="banner-orb"></div>
+          <div class="eyebrow">KARACHI INSTITUTE OF ECONOMICS &amp; TECHNOLOGY</div>
+          <h1>Student Fee Statement</h1>
+          <p>Account ledger · All Campuses</p>
+          <div class="student-meta">
+            <div><span>STUDENT NO</span><strong>15883</strong></div>
+            <div><span>STUDENT NAME</span><strong>MUHAMMAD MUZAMMIL</strong></div>
+            <div><span>FATHER NAME</span><strong>ABDUL HAMEED</strong></div>
+            <div><span>PROGRAM / BATCH</span><strong>BS · BS-CS</strong></div>
+          </div>
+        </section>
+
+        <section class="summary-cards">
+          <article class="summary-card"><span>TOTAL RECEIVABLE</span><strong>Rs 825,498</strong></article>
+          <article class="summary-card"><span>TOTAL RECEIVED</span><strong>Rs 723,998</strong></article>
+          <article class="summary-card discount"><span>TOTAL DISCOUNT</span><strong>Rs 203,043</strong></article>
+          <article class="summary-card balance"><span>CURRENT BALANCE</span><strong>Rs 101,500</strong><em>Outstanding</em></article>
+        </section>
+
+        <div class="ledger-heading">
+          <h2>Term-wise Ledger</h2>
+          <!-- <select id="termFilter" aria-label="Filter terms">
+            <!-- <option value="all">All terms (8)</option> -->
+            <option value="Fall 2026">Fall 2026</option>
+            <option value="Fall 2023">Fall 2023</option> -->
+          <!-- </select> -->
+        </div>
+
+        <section class="ledger" id="ledger">
+       
+
+          <article class="term-card" data-term="Fall 2026">
+            <button class="term-heading">
+              <span class="term-name"><span class="chevron">▾</span>Fall 2026</span>
+              <span class="term-stats"><span>Receivable <b>162,000</b></span><span>Received <b>60,500</b></span><span class="discount-pill"></span><span><b></b></span></span>
+            </button>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Date</th><th>Tran ID</th><th>Description</th><th>Campus</th><th>Cheque No</th><th>Receipt</th><th>NOC</th><th>Received</th><th>Receivable</th><th>Balance</th></tr></thead>
+                <tbody>
+                  <tr><td>01-SEP-26</td><td>2604557</td><td>Registration</td><td>NNAZ</td><td></td><td></td><td>12</td><td></td><td>162,000</td><td class="bold">162,000</td></tr>
+                  <tr><td>02-SEP-26</td><td>2604903</td><td>Mis Service Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>60</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606597</td><td>Installment Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>450</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606601</td><td>Installment Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>450</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606602</td><td>Mis Service Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>60</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606600</td><td>Mis Service Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>60</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606598</td><td>Mis Service Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>60</td><td class="bold">162,000</td></tr>
+                  <tr><td>08-SEP-26</td><td>2606599</td><td>Installment Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>450</td><td class="bold">162,000</td></tr>
+                  <tr><td>12-SEP-26</td><td>2607759</td><td>Fee Collection</td><td>NNAZ</td><td>ONLINE</td><td>194402</td><td></td><td class="received">17,500</td><td></td><td class="bold">144,500</td></tr>
+         
+                  <tr><td>08-OCT-26</td><td>2606599</td><td>Installment Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>450</td><td class="bold">144,500</td></tr>
+                  <tr><td>10-OCT-26</td><td>2607759</td><td>Fee Collection</td><td>NNAZ</td><td>ONLINE</td><td>194402</td><td></td><td class="received">21,500</td><td></td><td class="bold">123,000</td></tr>
+         
+                  <tr><td>08-NOV-26</td><td>2606599</td><td>Installment Charges</td><td>NNAZ</td><td></td><td></td><td></td><td></td><td>450</td><td class="bold">123,000</td></tr>
+                  <tr><td>10-NOV-26</td><td>2607759</td><td>Fee Collection</td><td>NNAZ</td><td>ONLINE</td><td>194402</td><td></td><td class="received">21,500</td><td></td><td class="bold">101,500</td></tr>
+                </tbody>
+                <tfoot><tr><td colspan="6"></td><td>15</td><td>60,500</td><td></td><td>101,500</td></tr></tfoot>
+              </table>
+            </div>
+          </article>
+        </section>
+        <div class="bottom-accent"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
